@@ -1,0 +1,191 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  /* border: 1px dashed gray; */
+}
+
+body {
+  color: #43281c;
+  font-family: sans-serif;
+  background-color: #efefef;
+}
+
+/* below */
+h1 {
+  font-family: "Franklin Gothic Medium";
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background: #43281c;
+  color: #fbf2c0
+}
+
+.logo {
+  height: 30px;
+  opacity: 70%;
+}
+
+.page {
+  display: grid;
+  width: 100%;
+  column-gap: 30px;
+  row-gap: 30px;
+  padding: 30px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "box-order     box-name"
+    "box-order     box-payment"
+    "box-total     box-total"
+    "checkout      checkout";
+}
+
+.bg-light {
+  background: #eee1d5
+}
+
+.bg-med {
+  background: #deb993;
+}
+
+.box-title {
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  color: #885a2d;
+}
+
+.section-box {
+  padding: 20px;
+}
+
+.items>li:not(:last-child) {
+  /* your css here */
+  border-bottom: 1px solid #cf947a;
+}
+
+.items>li {
+  /* your css here */
+  padding: 10px 0 10px 0;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 40px 1fr 50px;
+  grid-template-rows: auto 1fr;
+  gap: 0 20px;
+  grid-template-areas:
+    "quantity title price"
+    ". list-items .";
+}
+
+.item-quantity {
+  color: black;
+  grid-area: quantity
+}
+
+.item-price {
+  color: black;
+  grid-area: price;
+  justify-self: end;
+}
+
+.item-option {
+  color: #be897a;
+}
+
+.item-options-list {
+  color: #bc946b;
+  grid-area: list-items;
+  font-size: .9rem;
+  line-height: 1.5rem;
+}
+
+.item-title {
+  color: black;
+  font-weight: bold;
+  margin-bottom: .5rem;
+}
+
+.totals-table {
+  width: 100%;
+}
+
+.box-payment {
+  grid-area: box-payment;
+}
+
+.box-order {
+  grid-area: box-order;
+}
+
+.box-name {
+  grid-area: box-name;
+}
+
+.box-total {
+  grid-area: box-total;
+  padding: 0 20%;
+}
+
+.totals-table td {
+  padding: 5px 0;
+}
+
+.user-input-label {
+  font-size: .5rem;
+  position: absolute;
+  top: -8px;
+  left: 20px;
+  color: #bc946b;
+  background-color: #eee1d5;
+  padding: 0 5px;
+  z-index: 1;
+}
+
+.user-input {
+  color: #bc946b;
+  border-radius: 20px;
+  padding: .75rem;
+  width: 100%;
+  background: none;
+  border: 2px solid #885a2d;
+}
+
+.user-input:focus-visible {
+  outline: none;
+}
+
+.user-input:hover {
+  box-shadow: 0px 0px 4px 4px #cf947a;
+}
+
+.checkout {
+  grid-area: checkout;
+  padding: 15px;
+  border: none;
+  border-radius: 20px;
+}
+
+.final-totals {
+  font-weight: bold;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 1rem;
+}
