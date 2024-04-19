@@ -12,36 +12,6 @@ export default function Index() {
         <h1 className="brand">Coffee Masters</h1>
       </nav>
       <div className="page">
-        <section className="box-order bg-light section-box">
-          <h2 className="box-title">ITEMS</h2>
-          <ul className="items">
-            <li className="item">
-              <div className="item-quantity">1x</div>
-              <div className="item-title">Crackacino</div>
-              <div className="item-price">$6.00</div>
-              <ul className="item-options-list">
-                <li className="item-option">Light Foam</li>
-              </ul>
-            </li>
-            <li className="item">
-              <div className="item-quantity">1x</div>
-              <div className="item-title">Cappucino</div>
-              <div className="item-price">$7.90</div>
-              <ul className="item-options-list">
-                <li className="item-option">Almond Milk</li>
-                <li className="item-option">Double Espesso Shot</li>
-              </ul>
-            </li>
-            <li className="item">
-              <div className="item-quantity">1x</div>
-              <div className="item-title">Croissant</div>
-              <div className="item-price">$5.37</div>
-              <ul className="item-options-list">
-                <li className="item-option">Butter</li>
-              </ul>
-            </li>
-          </ul>
-        </section>
         <section className="box-name bg-light section-box">
           <div className="name-box box">
             <h2 className="box-title">NAME</h2>
