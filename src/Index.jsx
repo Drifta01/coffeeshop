@@ -17,7 +17,7 @@ export default function Index() {
           <ul className="items">
             <li className="item">
               <div className="item-quantity">1x</div>
-              <div className="item-title">Crackacino</div>
+              <div className="item-title">Cappucino</div>
               <div className="item-price">$6.00</div>
               <ul className="item-options-list">
                 <li className="item-option">Light Foam</li>
