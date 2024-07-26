@@ -86,7 +86,7 @@ export default function Index() {
             </tbody>
           </table>
         </section>
-        <button className="checkout bg-med" type="button">
+        <button><a className="checkout bg-med" type="button" href="https://frontendmasters.com/"></a></button>
           Place Order
         </button>
       </div>
